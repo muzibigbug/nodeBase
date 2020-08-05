@@ -9,7 +9,9 @@ const host = "127.0.0.1"
 const server = http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": "text/html; charset = utf-8" });
     var urlJson = url.parse(req.url);
-    // console.log('__dirname : ' + __dirname);  // 返回运行文件所在的目录
+    res.write('__dirname : ' + __dirname);  // 返回运行文件所在的目录 C:\Users\10436\Desktop\nodeBase
+    res.write("<br>");
+    res.write('__filename : ' + __filename);  // 返回运行文件所在的目录具体位置 C:\Users\10436\Desktop\nodeBase\fs.js
 
     if (urlJson.pathname !== "/favicon.ico") {
         // res.write("<h2>muzidigbig</h2>")
