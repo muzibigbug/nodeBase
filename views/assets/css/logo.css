@@ -1,0 +1,110 @@
+body {
+  height: 100%;
+  background: url(../images/FS-Cloud/bg.png) no-repeat;
+}
+body .logo-copyright {
+  color: #fff;
+  font-size: 12px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+body .logo-form {
+  width: 540px;
+  min-height: 300px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/FS-Cloud/form_bg.png) no-repeat;
+  border-radius: 3px;
+  padding: 60px;
+}
+body .logo-form .login-img {
+  width: 61px;
+  height: 59px;
+  background: url(../images/FS-Cloud/logo.png) no-repeat;
+  margin: 0 auto;
+}
+body .logo-form .login-txt {
+  width: 326px;
+  height: 30px;
+  background: url(../images/FS-Cloud/FS-Cloud-Platform.png) no-repeat;
+  margin: 20px auto;
+}
+body .logo-form .inp-item {
+  position: relative;
+}
+body .logo-form .inp-item .inp-label {
+  display: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+body .logo-form .inp-item input {
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  padding: 20px 0 15px;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+body .logo-form .inp-item input:focus {
+  border-bottom: 1px solid #1477fe !important;
+}
+body .logo-form .inp-item input:focus ~ .logo-error {
+  display: none !important;
+}
+body .logo-form .inp-item input.active {
+  border-bottom: 1px solid #FF4A4A;
+}
+body .logo-form .inp-item .logo-error {
+  display: none;
+  font-size: 12px;
+  color: #FF4A4A;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+body .logo-form .Remember {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  margin-top: 15px;
+}
+body .logo-form .Remember input {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  outline: 0;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  background: url(../images/FS-Cloud/remenber.png) no-repeat;
+}
+body .logo-form .Remember input:checked {
+  background: url(../images/FS-Cloud/remenber-ok.png) no-repeat;
+}
+body .logo-form .logo-sub {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background: #1477fe;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20px;
+}
+body .logo-form .logo-Forget {
+  font-size: 16px;
+  color: #fff;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=logo.css.map */

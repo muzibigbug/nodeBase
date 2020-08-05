@@ -1,0 +1,8 @@
+@import "./variable";
+@mixin fixedLeft50 {
+    position: fixed;
+    left: 50%;
+}
+%error{
+    color: $colorFF4A4A;
+}

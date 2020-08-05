@@ -5,8 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/resetStyle.css">
+    <link rel="stylesheet" href="./assets/css/logo.css">
 </head>
 <body>
-    <h1>login</h1>
+    <div class="logo">
+        <div class="logo-form">
+            <form action="#">
+                <div class="login-img"></div>
+                <div class="login-txt"></div>
+                <div class="inp-item">
+                    <p class="inp-label">Username</p>
+                    <input type="text" name="" id="name" autocomplete="off" placeholder="name">
+                    <div class="logo-error">
+                        Email address is incorrect
+                    </div>
+                </div>
+                <div class="inp-item" style="margin-top : 30px;">
+                    <p class="inp-label">Username</p>
+                    <input type="password" name="" id="password" autocomplete="off" placeholder="password">
+                    <div class="logo-error">
+                        Passwords does not match the anccount
+                    </div>
+                </div>
+                <div class="Remember">
+                    <input type="checkbox" name="" id="">
+                    <span>Remember me</span>
+                </div>
+                <input type="submit" value="Sign in" class="logo-sub">
+                <div class="logo-Forget">
+                    Forget password
+                </div>
+            </form>
+        </div>
+        <div class="logo-copyright">Copyright © 2020 by FS.COM All Rights Reserved.</div>
+    </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#name,#password").on("focus", function() {
+            $(this).removeClass("active").next().hide()
+        })
+        $(".logo-sub").on("click" , function() {
+            if($("#name").val() != "admin" || $("#name").val() == '') {
+                $("#name").addClass("active").next().show();
+            }else {
+                $("#name").removeClass("active").next().hide();
+            }
+            if($("#password").val() != "admin" || $("#password").val() == '') {
+                $("#password").addClass("active").next().show();
+            }else {
+                $("#password").removeClass("active").next().hide();
+            }
+            if($("#name").val() == "admin" && $("#password").val() == "admin") {
+                window.location.href = "";
+            }
+            return false;
+        })
+       
+    })
+</script>
 </html>
