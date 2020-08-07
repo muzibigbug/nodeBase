@@ -32,6 +32,7 @@ const server = http.createServer(function (require, response) {
         // var extname = path.extname(pathname);
 
         if (url.parse(require.url).pathname == "/login") {
+            response.write("登陆成功！")
             console.log("登录")
         } else {
             console.log("找不到此页面")
